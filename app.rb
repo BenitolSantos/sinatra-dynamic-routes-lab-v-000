@@ -18,6 +18,7 @@ class App < Sinatra::Base
   end
 
   get '/say/:number/:phrase' do
+    #a dynamic route at get '/say/:number/:phrase' that accepts a number and a phrase and returns that phrase in a string the number of times given
     200
     @number = params[:number]
     @phrase = params[:phrase]
