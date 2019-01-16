@@ -10,6 +10,7 @@ class App < Sinatra::Base
   end
 
   get '/square/:number' do
+    #a dynamic route at get '/square/:number' that accepts a number and returns the square of that number.
     200 #expecting an int for status code to be returned, 200
     @number = params[:number].to_i
     @square = (@number ** 2)
