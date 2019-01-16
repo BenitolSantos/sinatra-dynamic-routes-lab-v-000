@@ -4,6 +4,7 @@ require_relative 'config/environment'
 class App < Sinatra::Base
   # Write your code here!
   get '/reversename/:name' do
+    #a dynamic route at get '/reversename/:name' that accepts a name and renders the name backwards.
     @user_name = params[:name]
     @user_name.reverse!
   end
