@@ -30,6 +30,7 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2' do
     200
     case params[:operation]
+      #switch statment
     when "add"
       @answer = params[:number1].to_i + params[:number2].to_i
       @answer.to_s
