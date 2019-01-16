@@ -32,6 +32,7 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
+    #a dynamic route at get '/:operation/:number1/:number2' that accepts an operation (add, subtract, multiply or divide) and performs the operation on the two numbers provided. For example, going to /add/1/2 should render 3
     200
     case params[:operation]
       #switch statment
